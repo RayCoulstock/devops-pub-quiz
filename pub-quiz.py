@@ -13,8 +13,16 @@ quiz_questions = [
         "options": ["A) 3", "B) 4", "C) 5", "D) 22"],
         "answer": "B"
     },
+    {
+        "question": "What is the airspeed of an unladen swallow?",
+        "options": ["A) 33 mph", "B) 25 mph", "C)  40 mph", "D) 45 mph"],
+        "answer": "C"
+    },
     # Learners can add more questions here following the same structure
 ]
+
+# Variable to store the user's score
+score = 0
 
 # Loop through each question
 for question in quiz_questions:
@@ -29,8 +37,10 @@ for question in quiz_questions:
     # Check if the answer is correct
     if user_answer == question["answer"]:
         print("Correct!")
+        score += 1 # Increment the score if the answer is correct
     else:
         print(f"Wrong! The correct answer was {question['answer']}.")
 
 # Goodbye message
 print("Thanks for playing the Pub Quiz!")
+print(f"You scored {score} out of 3")
