@@ -33,6 +33,12 @@ quiz_questions = [
         "answer": "C"
     },
     {
+        "question": "What is Batmans real name?",
+        "options": ["A) Clark Kent", "B) Bruce Wayne", "C)  Dick Grayson", "D) Diana Prince"],
+        "prompt": "Your answer (A, B, C, D): ",
+        "answer": "B"
+    },
+    {
         "question": "What is your name?",
         "options": ["Please enter your name"],
         "prompt": "Fullname: ",
